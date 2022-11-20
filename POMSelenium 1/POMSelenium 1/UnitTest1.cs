@@ -36,9 +36,16 @@ namespace POMSelenium_1
             _homePage.Photo.Click();
             _homePage.AddToCart.Click();
             _homePage.Back.Click();
-            _homePage.Menu.Click();
-            _homePage.LogOut.Click();
             
+            
+        }
+        [Test]
+        public void TC02_OpenPopUp_ShouldDisplayed()
+        {
+            Login("standard_user", "secret_sauce");
+            _homePage.Menu.Click();
+
+
         }
         public void Login(string name, string pass)
         {
